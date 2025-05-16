@@ -1,11 +1,14 @@
-// In your sketch:
-let shape;
+let ssss;
+async function setup() {
+  createCanvas(600, 600);
+  background(120);
 
-function preload() {
-  shape = loadSVG('example.svg'); // Implement loadSVG using fetch/DOMParser
-}
-
-function draw() {
-  background(255);
-  shape.draw();
+  ssss = await loadSVG("example.svg");
+  
+  ssss.disableStyle();
+  fill(122, 222, 200);
+  strokeWeight(11);
+  stroke(1, 111, 222)
+  ssss.display();
+  
 }
