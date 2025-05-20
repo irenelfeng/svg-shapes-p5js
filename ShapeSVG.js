@@ -394,7 +394,7 @@ class ShapeSVG {
       }
     }
 
-    // TODO: draw individual vertices
+    
     ctx.fill(new Path2D(this.pathData));
     ctx.stroke(new Path2D(this.pathData));
 
@@ -405,7 +405,7 @@ class ShapeSVG {
   }
 
   /**
-   * Gets child by searching by name (svg id attribute)
+   * Gets child by searching by index (svg id attribute)
    * @param {number} index
    * @returns {ShapeSVG} child
    */
