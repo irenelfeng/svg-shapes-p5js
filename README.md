@@ -25,8 +25,8 @@ Link ShapesSVG.js in your HTML file on p5.js:
 
 ## References 
 
-[Processing java code]https://github.com/processing/processing4/blob/main/core/src/processing/core/PShapeSVG.java#L1040
-[SVG specification](https://www.w3.org/TR/SVG2/)
+- [Processing java code](https://github.com/processing/processing4/blob/main/core/src/processing/core/PShapeSVG.java#L1040)
+- [SVG specification](https://www.w3.org/TR/SVG2/)
 
 ## TODO
 - [ ] Contribute to the [libraries](https://github.com/processing/p5.js-website/blob/main/docs/contributing_libraries.md) p5.js website
