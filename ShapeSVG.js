@@ -394,7 +394,7 @@ class ShapeSVG {
       }
     }
 
-    
+    // Maybe primitives should be drawn differently? 
     ctx.fill(new Path2D(this.pathData));
     ctx.stroke(new Path2D(this.pathData));
 
@@ -418,6 +418,28 @@ class ShapeSVG {
    */
   getChildCount() {
     return this.children.length;
+  }
+
+  /**
+   * recursively gets all children
+   * @returns {Array<ShapeSVG>} array of all nodes down the tree
+   */
+  getAllNodes() {
+    return this._getAllChildren(this, []);
+  }
+
+  /**
+   * 
+   * @param {ShapeSVG} SVG node
+   * @param {Array<ShapeSVG>} array of the rest of the tree
+   * @returns 
+   */
+  _getAllChildren(head, arr) {
+    arr.push(head); // add to the front of the array so the root is drawn first
+    for (const child of head.children) {
+      child._getAllChildren(child,arr); // also add all the children
+    }
+    return arr;
   }
 
   /**

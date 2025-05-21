@@ -11,9 +11,10 @@ A p5.js library for loading and creating SVGs.
 + `disableStyle()/enableStyle()` - disables (and enables) the style of the SVG 
 + `contains()` method to check if a point is inside the shape
 + `getVertexCount()` and `getVertex(i)` methods to get the number of vertices and the vertex at a given index for the path variable. 
++ `getAllNodes()` method to get the list of all nodes in the SVG tree
 
 ## Installation
-Link ShapesSVG.js in your HTML file on p5.js:
+Upload `ShapesSVG.js` in your p5.js editor, and link it in your HTML file on p5.js:
 
 ```javascript
 <head>
