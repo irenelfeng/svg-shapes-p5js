@@ -12,6 +12,7 @@ A p5.js library for loading and creating SVGs.
 + `contains()` method to check if a point is inside the shape
 + `getVertexCount()` and `getVertex(i)` methods to get the number of vertices and the vertex at a given index for the path variable. 
 + `getAllNodes()` method to get the list of all nodes in the SVG tree
++ `getType()` method to get the type of the shape (e.g., `path`, `primitive`, `group`, `geometry`)
 
 ## Installation
 Upload `ShapesSVG.js` in your p5.js editor, and link it in your HTML file on p5.js:
@@ -34,7 +35,8 @@ Upload `ShapesSVG.js` in your p5.js editor, and link it in your HTML file on p5.
 
 ## TODO
 - [ ] Contribute to the [libraries](https://github.com/processing/p5.js-website/blob/main/docs/contributing_libraries.md) p5.js website
-- [ ] Add more primitives (only rectangle, circle, and ellipse are implemented)
+- [ ] Add functionality for more primitives (only rectangle, circle, and ellipse are implemented)
+- [ ] Add 'geometry' type
 - [ ] Add more shape geometry methods (e.g., `getBounds()`, `getCenter()`, etc.)
 
 ## MIT License
