@@ -1,18 +1,18 @@
-let ssss;
+let svg;
 async function setup() {
   createCanvas(800, 800);
   background(120);
 
-  ssss = await loadSVG("p5js.svg");
+  svg = await loadSVG("p5js.svg");
   
-  ssss.disableStyle();
+  svg.disableStyle();
   fill(122, 222, 200);
   strokeWeight(3);
   stroke(1, 111, 222)
-  ssss.display();
+  svg.display();
 
   // choose different colors for each node
-  ssss.getAllNodes().forEach((node) => {
+  svg.getAllNodes().forEach((node) => {
     let r = random(255);
     let g = random(255);
     let b = random(255);
